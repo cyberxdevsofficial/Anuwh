@@ -1,22 +1,54 @@
-<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'><title>Contact CyberDevs</title><link rel='stylesheet' href='style.css'><script src='script.js' defer></script></head><body>
-<header>
-  <div class='logo rainbow'>CyberDevs</div>
-  <nav>
-    <a href='index.html'>Home</a>
-    <a href='about.html'>About</a>
-    <a href='projects.html'>Projects</a>
-    <a href='team.html'>Team</a>
-    <a href='contact.html'>Contact</a>
-  </nav>
-  <button class='hamb' id='hambBtn'>
-    <span class='bar'></span><span class='bar'></span><span class='bar'></span>
-  </button>
-  <div class='mobile-menu' id='mobileMenu'>
-    <a href='index.html'>Home</a>
-    <a href='about.html'>About</a>
-    <a href='projects.html'>Projects</a>
-    <a href='team.html'>Team</a>
-    <a href='contact.html'>Contact</a>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CyberDevs — Contact</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="brand"><div class="logo"><span class="rain">CyberDevs</span></div></div>
+    <nav>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="team.html">Team</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html" class="active">Contact</a>
+      </div>
+      <button class="hamb" id="hambBtn" aria-label="Menu">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu" role="menu" aria-hidden="true">
+      <a href="index.html">Home</a><a href="about.html">About</a><a href="team.html">Team</a><a href="projects.html">Projects</a><a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <div class="container">
+    <section>
+      <h2 class="section-title">Contact Us</h2>
+      <div class="card contact-card">
+        <div>
+          <form id="contactForm">
+            <input id="name" type="text" placeholder="Your name" required>
+            <input id="email" type="email" placeholder="Your email" required>
+            <input id="subject" type="text" placeholder="Subject">
+            <textarea id="message" rows="6" placeholder="Message..." required></textarea>
+            <button type="submit">Send Email</button>
+          </form>
+        </div>
+        <div style="padding:12px">
+          <h4>Or email directly</h4>
+          <p class="muted">anuga.senithu2013official@gmail.com</p>
+          <h4 style="margin-top:18px">Office</h4>
+          <p class="muted">Dadalla, Galle, Sri Lanka</p>
+        </div>
+      </div>
+    </section>
   </div>
-</header>
-<main><section class='contact'><h1>Contact Us</h1><form id='contactForm' action='mailto:anuga.senithu2013official@gmail.com' method='POST'><input type='text' id='name' placeholder='Your Name' required><input type='email' id='email' placeholder='Your Email' required><textarea id='message' placeholder='Your Message' required></textarea><button type='submit'>Send Message</button></form></section></main><footer>© 2025 CyberDevs</footer></body></html>
+
+  <footer>© CyberDevs — anuga.senithu2013official@gmail.com</footer>
+</body>
+</html>

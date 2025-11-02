@@ -1,22 +1,59 @@
-<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'><title>About CyberDevs</title><link rel='stylesheet' href='style.css'><script src='script.js' defer></script></head><body>
-<header>
-  <div class='logo rainbow'>CyberDevs</div>
-  <nav>
-    <a href='index.html'>Home</a>
-    <a href='about.html'>About</a>
-    <a href='projects.html'>Projects</a>
-    <a href='team.html'>Team</a>
-    <a href='contact.html'>Contact</a>
-  </nav>
-  <button class='hamb' id='hambBtn'>
-    <span class='bar'></span><span class='bar'></span><span class='bar'></span>
-  </button>
-  <div class='mobile-menu' id='mobileMenu'>
-    <a href='index.html'>Home</a>
-    <a href='about.html'>About</a>
-    <a href='projects.html'>Projects</a>
-    <a href='team.html'>Team</a>
-    <a href='contact.html'>Contact</a>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CyberDevs — About</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="brand"><div class="logo"><span class="rain">CyberDevs</span></div></div>
+    <nav>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="team.html">Team</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <button class="hamb" id="hambBtn" aria-label="Menu">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu" role="menu" aria-hidden="true">
+      <a href="index.html">Home</a><a href="about.html">About</a><a href="team.html">Team</a><a href="projects.html">Projects</a><a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <div class="container">
+    <section>
+      <h2 class="section-title">About CyberDevs</h2>
+      <div class="card">
+        <p class="muted">CyberDevs is a Sri Lanka based collective of security-focused developers and designers dedicated to building tools, educational resources and defensive solutions for the modern web. Founded with the mission to make secure technologies accessible, CyberDevs combines practical offensive security knowledge with robust engineering practices to deliver high-quality projects that help individuals and organizations better understand and protect their systems.</p>
+        <p class="muted">Our team specializes in vulnerability research, automation tooling, secure web development, and responsible disclosure. We publish open tools, learning resources, and run hands-on workshops to uplift developers and students across the region. Integrity, community education, and continuous improvement are at the heart of everything we build.</p>
+        <p class="muted">CyberDevs believes in ethical practice — all tools and demonstrations are provided for education and defensive purposes. If you need help securing a system, reach out via the Contact page and we will respond to arrange a consultation.</p>
+      </div>
+
+      <div style="margin-top:18px" class="card">
+        <h3>Our Approach</h3>
+        <p class="muted">We focus on practical, repeatable methods. Each project prioritizes documentation, safety guidance and clear licensing. Community contributions are welcomed and we maintain a public roadmap for upcoming tools and workshops.</p>
+        <p class="muted">The CyberDevs collective champions open learning and responsible disclosure: research findings are shared with vendors and remediated before public advisories are issued.</p>
+      </div>
+
+      <div style="margin-top:18px" class="card">
+        <h3>Get Involved</h3>
+        <p class="muted">Want to contribute? Join our workshops, submit pull requests on our tools, or reach out for collaboration. We mentor students and help contributors get started with secure coding and research basics.</p>
+        <div style="margin-top:12px"><a class="btn" href="projects.html">See Projects</a></div>
+      </div>
+
+      <div style="margin-top:18px" class="card">
+        <h3>History</h3>
+        <p class="muted">Founded by security-minded developers, CyberDevs evolved from local meetups into an online collective offering tools and training. Over time, the group published multiple educational repositories and launched the Hacker Toolkit — a curated sandbox for learners.</p>
+      </div>
+    </section>
   </div>
-</header>
-<main><section class='about'><h1>About CyberDevs</h1><p>CyberDevs is a technology group focused on cybersecurity, software innovation, and digital empowerment. We create secure web systems, automation tools, and AI integrations to strengthen digital safety. Founded by Anuga Senithu De Silva, CyberDevs aims to educate and build smarter digital defenses for the next generation.</p><p>Our team believes in creativity, collaboration, and constant learning. Each project reflects our dedication to innovation and trust in technology.</p></section></main><footer>© 2025 CyberDevs</footer></body></html>
+
+  <footer>© CyberDevs — anuga.senithu2013official@gmail.com</footer>
+</body>
+</html>
